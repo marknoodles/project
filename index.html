@@ -1,61 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel='stylesheet' href='dist/main.css'>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="dist/main.css" />
     <title>Document</title>
-</head>
-<body>
-        <div class="navbar">
-            <div class="logo-block">
-        <img class="navbar-logo" src="assets/Logo.png">
-            </div>
-        <div class="text-block">
+  </head>
+  <body>
+    <div class="navbar">
+      <div class="navbar-logo">
+        <img class="navbar__logo" src="assets/Logo.png" />
+      </div>
+      <div class="navbar__text-block">
         <span class="navbar-text">О нас</span>
         <div class="with-arrow">
-        <span class="navbar-text">Услуги</span>
-        <img class="open-menu-arrow" src="assets/expand_more.png">
+          <span class="navbar-text">Услуги</span>
+          <img class="open-menu-arrow" src="assets/expand_more.png" />
         </div>
         <span class="navbar-text">Вакансии</span>
         <span class="navbar-text">Новости</span>
         <div class="with-arrow">
-        <span class="navbar-text">Соглашения</span>
-        <img class="open-menu-arrow" src="assets/expand_more.png">
+          <span class="navbar-text">Соглашения</span>
+          <img class="open-menu-arrow" src="assets/expand_more.png" />
         </div>
-        </div>
-        <div class="button-block">
+      </div>
+      <div class="navbar__button-block">
         <button class="btn-login">Войти</button>
         <button class="btn-signin">Зарегистрироваться</button>
+      </div>
+    </div>
+    <div class="find-hotel-number">
+      <div class="search-card">
+        <h2>Найдём номера под ваши пожелания</h2>
+        <div class="arriving-departure">
+          <div class="arriving">
+            <h3>ПРИБЫТИЕ</h3>
+            <button class="search-card-button-up">
+              ДД.ММ.ГГГГ
+              <img class="arrow-button" src="assets/expand_more.png" />
+            </button>
+          </div>
+          <div class="departure">
+            <h3>ВЫЕЗД</h3>
+            <button class="search-card-button-up">
+              ДД.ММ.ГГГГ
+              <img class="arrow-button" src="assets/expand_more.png" />
+            </button>
+          </div>
         </div>
+        <div class="guests">
+          <h3>ГОСТИ</h3>
+          <button class="search-card-button-down">
+            Сколько гостей
+            <img class="arrow-button" src="assets/expand_more.png" />
+          </button>
         </div>
-        <div class="find-hotel-number">
-            <div class="search-card">
-                <h2>Найдём номера под ваши пожелания</h2>
-                <div class="arriving-departure">
-                <div class="arriving">
-                    <h3>ПРИБЫТИЕ</h3>
-                    <button class="search-card-button-up">ДД.ММ.ГГГГ <img class="arrow-button" src="assets/expand_more.png"></button>
-                </div>
-                <div class="departure">
-                    <h3>ВЫЕЗД</h3>
-                    <button class="search-card-button-up">ДД.ММ.ГГГГ <img class="arrow-button" src="assets/expand_more.png"></button>
-                </div>
-                </div>
-                <div class="guests">
-                    <h3>ГОСТИ</h3>
-                    <button class="search-card-button-down">Сколько гостей <img class="arrow-button" src="assets/expand_more.png"></button>
-                </div>
-                <div class="btn-block">
-                <button class="hotel-number">ПОДОБРАТЬ НОМЕР <img class="arrow-forward" src="assets/arrow_forward.png"></button>
-            </div>
-            </div>
-            <img class="landing-page-cover" src="assets/image.png">
-            <div class="text-best-block">
-            <p>Лучшие номера для вашей работы, <br />
-                отдыха и просто вдохновения
-            </p>
-            </div>
+        <div class="btn-block">
+          <button class="hotel-number">
+            ПОДОБРАТЬ НОМЕР
+            <img class="arrow-forward" src="assets/arrow_forward.png" />
+          </button>
         </div>
-</body>
+      </div>
+      <img class="landing-page-cover" src="assets/image.png" />
+      <div class="text-best-block">
+        <p>
+          Лучшие номера для вашей работы, <br />
+          отдыха и просто вдохновения
+        </p>
+      </div>
+    </div>
+  </body>
 </html>
