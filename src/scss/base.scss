@@ -71,7 +71,7 @@ body {
 .landing-page-cover {
 }
 .search-card {
-  width: 338px;
+  width: 380px;
   height: 374px;
   box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
@@ -84,7 +84,13 @@ body {
 .search-card:hover {
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
 }
+.search-card-inside{
+padding-left: 30px;
+padding-top: 40px;
+padding-right: 30px;
+padding-bottom: 40px;
 
+}
 .arriving-departure {
   display: flex;
   justify-content: space-around;
@@ -95,21 +101,83 @@ body {
 .form{
 
 &__arriving{
-
+font-weight: bold;
 }
 &__departure{
-
+  font-weight: bold;
 }
 &__guests {
-  
+  font-weight: bold;
 }
 &__btn{
-
+  color: white;
+  background: linear-gradient(#BC9CFF, #8BA4F9);
+  opacity: 0.5;
+  width: 196px;
+  height: 34px;
+  border-radius: 22px;
+  box-sizing: border-box;
+  position: relative;
+  border: none;
+  overflow: hidden;
+  font-size: 12px;
+  font-weight: 700;
 }
 }
+input{
+height: 44px;
+width: 150px;
+border: solid 1px grey;
+border: opacity 0.5;
+border-radius: 4px;
+}
+.text-best-block {
+    
+}
+.block{
+  display: flex;
+  height: 372px;
+}
+.block{
+  &__first{
+    display: flex;
+    width: 20%;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 50%;
+  }
+  &__logo-img{
+    width: 48%;
 
-text-best-block {
-  position: absolute;
-  width: 20%;
-  padding-bottom: 20%;
+  }
+  &__second{
+    display: flex;
+    width: 20%;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 50%;
+  }
+  &__third{
+    display: flex;
+    width: 20%;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 50%;
+  }
+  &__fourth{
+    display: flex;
+    width: 20%;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 50%;
+  }
+  &__fifth{
+    display: flex;
+    width: 20%;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 50%;
+  }
+  &__form-email{
+  }
 }
