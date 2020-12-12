@@ -36,27 +36,35 @@ body {
   width: 87px;
   height: 34px;
   border-radius: 22px;
-  box-sizing: border-box;
-  background-color: linear-gradient(to right, #bc9cff 100% #8ba4f9 100%);
+  background: white;
+  border-top: 2px solid #BC9CFF;
+  border-bottom: 2px solid #8BA4F9;
+  border-left: 5px #BC9CFF;
+  border-right: 5px #8BA4F9 ;
+  border: linear-gradient(#BC9CFF, #8BA4F9);
   position: relative;
-  border: none;
-  overflow: hidden;
   font-size: 12px;
   font-weight: 700;
 }
+
+.btn-login::before{
+  opacity: 0.5;
+}
 .btn-signin {
-  color: $purple;
+  color: white;
+  background: linear-gradient(#BC9CFF, #8BA4F9);
+  opacity: 0.5;
   width: 196px;
   height: 34px;
   border-radius: 22px;
   box-sizing: border-box;
-  background-color: linear-gradient(to right, #bc9cff 100% #8ba4f9 100%);
   position: relative;
   border: none;
   overflow: hidden;
   font-size: 12px;
   font-weight: 700;
 }
+
 .find-hotel-number {
   
 }
@@ -80,8 +88,9 @@ body {
 .arriving-departure {
   display: flex;
   justify-content: space-around;
+}
 .form{
-  
+
 }
 .form{
 
@@ -98,7 +107,6 @@ body {
 
 }
 }
-
 
 text-best-block {
   position: absolute;
