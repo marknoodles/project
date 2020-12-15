@@ -4,6 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="dist/main.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
     <title>Document</title>
   </head>
   <body>
@@ -45,11 +47,18 @@
              <img class="arrow-button" src="assets/expand_more.png" /> 
           </div>
         </div>
-        <div class="form__guests">
+        <label for="name" class="form__label">ГОСТИ</label>
+        <div class="sf-field-label sf-guests-label">3 гостя</div>
+        <input type="text" class="sfl-guests-input" unselectable="on" readonly="">
+
+
+
+
+        <!-- <div class="form__guests">
           <label for="name" class="form__label">ГОСТИ</label>
          <input type="text" class="form__input" id="name" placeholder="Сколько гостей" required="" />
          <img class="arrow-button" src="assets/expand_more.png" /> 
-      </div>
+      </div> -->
         <div class="form__btn-block">
           <button class="form__btn">
             ПОДОБРАТЬ НОМЕР
