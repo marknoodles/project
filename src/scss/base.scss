@@ -5,6 +5,13 @@ $green: #6fcf97;
 body {
   font-family: 'Montserrat', sans-serif;
 }
+h3{
+  font-size: 12px;
+}
+span{
+  font-size: 14px;
+  line-height: 24px;
+}
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -26,7 +33,6 @@ body {
   &__button-block {
     margin-right: 120px;
     margin-top: 13px;
-    padding-right: 2%;
   }
   &-text {
     opacity: 0.5;
@@ -46,6 +52,7 @@ body {
   position: relative;
   font-size: 12px;
   font-weight: 700;
+  margin-right: 25px;
 }
 
 .btn-login::before{
@@ -54,7 +61,6 @@ body {
 .btn-signin {
   color: white;
   background: linear-gradient(#BC9CFF, #8BA4F9);
-  opacity: 0.5;
   width: 196px;
   height: 34px;
   border-radius: 22px;
@@ -124,6 +130,8 @@ font-weight: bold;
 &__btn-block{
   padding-top: 30px;
 }
+
+
 }
 input{
 height: 44px;
@@ -132,8 +140,10 @@ border: solid 1px grey;
 border: opacity 0.5;
 border-radius: 4px;
 }
-.text-best-block {
-    
+.image-text-bottom {
+  position: absolute;
+  bottom: -22px;
+  left: 73%;
 }
 .block{
   display: flex;
@@ -145,11 +155,11 @@ border-radius: 4px;
 .block{
   &__first{
     display: flex;
-    width: 28%;
+    width: 30%;
     flex-direction: column;
     justify-content: space-between;
-    height: 52%;
-    padding-top: 20px;
+    height: 49%;
+    padding-top: 15px;
   }
   &__logo-img{
     width: 37%;
@@ -164,14 +174,14 @@ border-radius: 4px;
   }
   &__third{
     display: flex;
-    width: 15%;
+    width: 21%;
     flex-direction: column;
     justify-content: space-between;
     height: 70%;
   }
   &__fourth{
     display: flex;
-    width: 26%;
+    width: 20%;
     flex-direction: column;
     justify-content: space-between;
     height: 60%;
@@ -189,6 +199,19 @@ border-radius: 4px;
   &__input{
   width: 240px;
   }
+  &__end-text{
+    opacity: 0.5;
+  }
+}
+.arrow-button{
+  position: absolute;
+  right: 11.5%;
+  margin-top: 13px;
+}
+.arrow-forward{
+  position: absolute;
+    right: 11.5%;
+    margin-top: -2px;
 }
 .endbar{
   display: flex;
