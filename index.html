@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="dist/main.css" />
+    <script src="src/js/test.js"></script>
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap"
@@ -68,12 +69,12 @@
             </div>
           </div>
           <label for="name" class="form__label">ГОСТИ</label>
-
-          <!-- <div class="form__guests">
-          <label for="name" class="form__label">ГОСТИ</label>
-         <input type="text" class="form__input" id="name" placeholder="Сколько гостей" required="" />
-         <img class="arrow-button" src="assets/expand_more.png" /> 
-      </div> -->
+          <select id="dropdown">
+            <option value="hide"></option>
+            <option value="first" rel="icon-temperature">ВЗРОСЛЫЕ</option>
+            <option value="second">ДЕТИ</option>
+            <option value="third">МЛАДЕНЦЫ</option>
+          </select>
           <div class="form__btn-block">
             <button class="form__btn">
               ПОДОБРАТЬ НОМЕР
