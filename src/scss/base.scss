@@ -92,7 +92,7 @@ span {
 }
 .search-card-inside {
   padding-left: 30px;
-  padding-top: 40px;
+  padding-top: 25px;
   padding-right: 30px;
   padding-bottom: 40px;
 }
@@ -125,9 +125,113 @@ span {
     font-weight: 700;
   }
   &__btn-block {
-    padding-top: 30px;
+    padding-top: 10px;
+  }
+  &__label{
+    font-weight: bold;
+    font-size: 12px;
   }
 }
+
+.btn-counter-minus{
+  width: 30px;
+  height: 30px;
+  background-color: white;
+  border-radius: 22px;
+  border: 1px solid;
+  opacity: 0.5;
+}
+.btn-counter-plus{
+  width: 30px;
+  height: 30px;
+  background-color: white;
+  border-radius: 22px;
+  border: 1px solid;
+  opacity: 0.5;
+}
+.dropdown{
+  padding-top: 20px;
+
+}
+
+#demo {
+  margin: -10px 0 50px 0;
+}
+
+#demo .wrapper {
+  display: inline-block;
+  // width: 180px;
+  margin: 0 10px 0 0;
+  // height: 20px;
+  position: relative;
+}
+
+#demo .parent {
+  height: 100%;
+  width: 100%;
+  display: block;
+  line-height: 30px;
+  height: 30px;
+  border-radius: 5px;
+  background: #F9F9F9;
+  border: 1px solid #AAA;
+  border-bottom: 1px solid #777;
+  font-weight: bold;
+  z-index: 2;
+  position: relative;
+}
+
+#demo .content {
+  position: absolute;
+  top: 0;
+  display: block;
+  z-index: 1;
+  height: 0;
+  width: 320px;
+  padding-top: 30px;
+  border: 1px solid #777;
+  border-radius: 2px;
+
+}
+
+#demo .content:hover {
+  height: 123px;
+  z-index: 3;
+}
+
+
+#demo .content ul {
+  background: #fff;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  height: 100%;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+#demo .content ul a {
+  text-decoration: none;
+}
+
+#demo .content li:hover {
+  background: #eee;
+  color: #333;
+}
+
+#demo .content li {
+  list-style: none;
+  text-align: left;
+  font-weight: bold;
+  font-size: 12px;
+  color: black;
+  line-height: 30px;
+  height: 30px;
+  padding-left: 10px;
+  // border-top: 1px solid #ccc;
+}
+
+
 input {
   height: 44px;
   width: 150px;
