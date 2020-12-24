@@ -1,12 +1,8 @@
 $darkshade: #1f2041;
 $purple: #bc9cff;
 $green: #6fcf97;
-
 body {
-  font-family: "Montserrat", sans-serif;
-}
-h3 {
-  font-size: 12px;
+  font-family: "Montserrat", sans-serif; 
 }
 span {
   font-size: 14px;
@@ -21,10 +17,10 @@ span {
 .navbar {
   &__logo {
     margin-left: 100%;
-    margin-top: 10px;
+    // margin-top: 10px;
   }
   &__text-block {
-    margin-top: 18px;
+    // margin-top: 18px;
     display: flex;
     width: 33%;
     justify-content: inherit;
@@ -32,7 +28,7 @@ span {
   }
   &__button-block {
     margin-right: 120px;
-    margin-top: 13px;
+    // margin-top: 13px;
   }
   &-text {
     opacity: 0.5;
@@ -55,6 +51,7 @@ span {
   font-size: 12px;
   font-weight: 700;
   margin-right: 25px;
+  outline: none;
 }
 
 .btn-login::before {
@@ -72,6 +69,7 @@ span {
   overflow: hidden;
   font-size: 12px;
   font-weight: 700;
+  outline: none;
 }
 .find-hotel-number {
 }
@@ -150,87 +148,10 @@ span {
   border: 1px solid;
   opacity: 0.5;
 }
-.dropdown{
-  padding-top: 20px;
-
+.btn-light{
+  width: 300px;
 }
 
-#demo {
-  margin: -10px 0 50px 0;
-}
-
-#demo .wrapper {
-  display: inline-block;
-  // width: 180px;
-  margin: 0 10px 0 0;
-  // height: 20px;
-  position: relative;
-}
-
-#demo .parent {
-  height: 100%;
-  width: 100%;
-  display: block;
-  line-height: 30px;
-  height: 30px;
-  border-radius: 5px;
-  background: #F9F9F9;
-  border: 1px solid #AAA;
-  border-bottom: 1px solid #777;
-  font-weight: bold;
-  z-index: 2;
-  position: relative;
-}
-
-#demo .content {
-  position: absolute;
-  top: 0;
-  display: block;
-  z-index: 1;
-  height: 0;
-  width: 320px;
-  padding-top: 30px;
-  border: 1px solid #777;
-  border-radius: 2px;
-
-}
-
-#demo .content:hover {
-  height: 123px;
-  z-index: 3;
-}
-
-
-#demo .content ul {
-  background: #fff;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  height: 100%;
-  border-bottom-left-radius: 5px;
-  border-bottom-right-radius: 5px;
-}
-
-#demo .content ul a {
-  text-decoration: none;
-}
-
-#demo .content li:hover {
-  background: #eee;
-  color: #333;
-}
-
-#demo .content li {
-  list-style: none;
-  text-align: left;
-  font-weight: bold;
-  font-size: 12px;
-  color: black;
-  line-height: 30px;
-  height: 30px;
-  padding-left: 10px;
-  // border-top: 1px solid #ccc;
-}
 
 
 input {
@@ -239,6 +160,7 @@ input {
   border: solid 1px grey;
   border: opacity 0.5;
   border-radius: 4px;
+  outline: none;
 }
 .image-text-bottom {
   position: absolute;
@@ -296,6 +218,11 @@ input {
   }
   &__input {
     width: 240px;
+  }
+  &__headling{
+    font-size: 12px;
+    font-weight: 700;
+
   }
   &__end-text {
     opacity: 0.5;
