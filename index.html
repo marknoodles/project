@@ -72,18 +72,36 @@
           <div class="dropdown">
           <label for="name" class="form__label">ГОСТИ</label>
           <div class="dropdown">
-            <button class="btn btn-light dropdown-toggle" type="button"  id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <button onclick="myFunction()" class="btn btn-light dropdown-toggle" type="button"  id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
               
             </button>
-            <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
-              <button class="dropdown-item" type="button">Action</button>
-              <button class="dropdown-item" type="button">Another action</button>
-              <button class="dropdown-item" type="button">Something else here</button>
+            <div id="dropDown-menu" class="dropdown-menu" aria-labelledby="dropdownMenu2">
+              <div class="dropdown-menu__first">
+              <div class="dropdown-item" type="">ВЗРОСЛЫЕ </div>
+              <div class="dropdown-menu__first__btns">
+              <input class="btn-counter-minus" type="button" name="decrease" value="-" />
+              <span class="dropdown-menu__number">0</span>
+              <input class="btn-counter-plus" type="button" name="increase" value="+"/>
+              </div>
+              </div>
+              <div class="dropdown-menu__second">
+              <div class="dropdown-item" type="">ДЕТИ</div>
+              <div class="dropdown-menu__first__btns">
+                <input class="btn-counter-minus" type="button" name="decrease" value="-" />
+                <span class="dropdown-menu__number">0</span>
+                <input class="btn-counter-plus" type="button" name="increase" value="+"/>
+                </div>
+            </div>
+            <div class="dropdown-menu__third">
+              <div class="dropdown-item" type="">МЛАДЕНЦЫ</div>
+              <div class="dropdown-menu__first__btns">
+                <input class="btn-counter-minus" type="button" name="decrease" value="-" />
+                <span class="dropdown-menu__number">0</span>
+                <input class="btn-counter-plus" type="button" name="increase" value="+"/>
+                </div>
             </div>
           </div>
-
-
-          
+          </div>
           </div>
           <div class="form__btn-block">
             <button class="form__btn">
