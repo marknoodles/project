@@ -173,20 +173,31 @@ span {
   &__first{
     display: flex;
     padding-bottom: 5px;
+    align-items: center;
   }
     &__first__btns{
     display: flex;
     justify-content: space-around;
     width: 30%;
     margin-right: 5px;
+    align-items: center;
   }
   &__second{
     display: flex;
     padding-bottom: 5px;
+    align-items: center;
   }
   &__third{
     display: flex;
     padding-bottom: 5px;
+    align-items: center;
+  }
+  &__number{
+    border: none;
+    background: white;
+    width: 16px;
+    font-weight: 700;
+    display: flex;
   }
   }
   .dropdown-item{
