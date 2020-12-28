@@ -79,17 +79,17 @@
               <div class="dropdown-menu__first">
               <div class="dropdown-item" type="">ВЗРОСЛЫЕ </div>
               <div class="dropdown-menu__first__btns">
-              <input onclick="countClick()" class="btn-counter-minus" type="button" name="decrease" value="-" />
+              <input onclick="countMinus()" class="btn-counter-minus" type="button" name="decrease" value="-" />
               <span id="clicks" class="dropdown-menu__number">0</span>
-              <input class="btn-counter-plus" type="button" name="increase" value="+"/>
+              <input onclick="countPlus()" class="btn-counter-plus" type="button" name="increase" value="+"/>
               </div>
               </div>
               <div class="dropdown-menu__second">
               <div class="dropdown-item" type="">ДЕТИ</div>
               <div class="dropdown-menu__first__btns">
-                <input class="btn-counter-minus" type="button" name="decrease" value="-" />
+                <input id="btnMinus" class="btn-counter-minus" type="button" name="decrease" value="-" />
                 <span class="dropdown-menu__number">0</span>
-                <input class="btn-counter-plus" type="button" name="increase" value="+"/>
+                <input  id="btnPlus" class="btn-counter-plus" type="button" name="increase" value="+"/>
                 </div>
             </div>
             <div class="dropdown-menu__third">
