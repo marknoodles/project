@@ -40,22 +40,29 @@ span {
   color: $purple;
   width: 87px;
   height: 34px;
-  border-radius: 22px;
   background: white;
-  border-top: 2px solid #bc9cff;
-  border-bottom: 2px solid #8ba4f9;
-  border-left: 5px #bc9cff;
-  border-right: 5px #8ba4f9;
-  border: linear-gradient(#bc9cff, #8ba4f9);
   position: relative;
   font-size: 12px;
   font-weight: 700;
   margin-right: 25px;
-  outline: none;
+  border-image: linear-gradient(to bottom right, #BC9CFF 0%, #8BA4F9 100%);
+  border: 2px solid transparent;
+  border-radius: 22px;
+    -moz-border-image: -moz-linear-gradient(#BC9CFF 0%, #8BA4F9 100%);
+    -webkit-border-image: -webkit-linear-gradient(#BC9CFF 0%, #8BA4F9 100%);
+    border-image: linear-gradient( #BC9CFF 0%, #8BA4F9 100%);
+    border-image-slice: 1;
 }
 
 .btn-login::before {
   opacity: 0.5;
+}
+
+.btn-login:active{
+  outline: none;
+}
+.btn-login:focus{
+  outline: none;
 }
 .btn-signin {
   color: white;
@@ -71,9 +78,18 @@ span {
   font-weight: 700;
   outline: none;
 }
+.btn-signin:active{
+  outline: none;
+}
+.btn-signin:focus{
+  outline: none;
+}
 .find-hotel-number {
 }
 .landing-page-cover {
+  height: 100%;
+  width: 100% ;
+  
 }
 .search-card {
   width: 380px;
@@ -130,7 +146,23 @@ span {
     font-weight: bold;
     font-size: 12px;
   }
+  &__input{
+    // background-repeat: no-repeat;  
+    // background-position: 30px; 
+    // -moz-border-radius: 5px; 
+    // -webkit-border-radius: 5px;     
+    // padding-left: 20px; 
+  }
+  &__input::placeholder{
+  }
+  &__input::-webkit-calendar-picker-indicator {
+    opacity:0;
+    
+    // width: 30px;
+  }
+
 }
+
 
 .btn-counter-minus{
   width: 30px;
@@ -311,13 +343,24 @@ input {
 
   }
 }
-@media only screen and (min-width: 1382px) {
+@media only screen and (min-width: 1441px) {
+  .body{
+   
+  }
 .navbar{
 width: 100%;
 }
 .landing-page-cover{
-  width: 90%;
-  margin: 0;
+  width: 100%;
+  top:-61px;
 }
 
+}
+@media only screen and (min-width: 800px){
+  .navbar{
+    width: 100%;
+    }
+  .landing-page-cover{
+    width: 100%;
+  }
 }
