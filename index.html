@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="dist/main.css" />
     <script src="src/js/test.js"></script>
     <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <link
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap"
       rel="stylesheet"
@@ -51,8 +52,9 @@
             <div class="form__arriving">
               <label for="name" class="form__label">ПРИБЫТИЕ</label>
               <input
-                type="date"
-                class="form__input"
+                type="text"
+                class="datepicker-here"
+                data-position="right top"
                 id="name"
                 placeholder="ДД.ММ.ГГГГ"
                 required=""

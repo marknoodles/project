@@ -20,6 +20,8 @@
     "webpack-cli": "^4.2.0"
   },
   "dependencies": {
-    "bootstrap": "^4.5.3"
+    "bootstrap": "^4.5.3",
+    "jquery": "^3.5.1",
+    "pg-calendar": "^1.4.31"
   }
 }

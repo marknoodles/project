@@ -4,7 +4,6 @@ function myFunction(){
 }
 
 
-
 let count = 0;
 let countNumber = document.getElementById("clicks");
 function countPlus(){
