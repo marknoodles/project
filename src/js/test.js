@@ -1,8 +1,9 @@
 function myFunction(){
     document.getElementById("dropDown-menu").classList.toggle("show");
-    document.getElementById("").classList.toggle("show");
 }
-
+function calendarFunction(){
+  document.getElementById("myCalendar").classList.toggle("show");
+}
 
 let count = 0;
 let countNumber = document.getElementById("clicks");

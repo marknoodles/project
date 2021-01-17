@@ -148,6 +148,12 @@ overflow: hidden;
     font-size: 12px;
     font-weight: 700;
   }
+ &__btn:active{
+    outline: none;
+  }
+  &__btn:focus{
+    outline: none;
+  }
   &__btn-block {
     padding-top: 10px;
   }
@@ -324,7 +330,7 @@ input {
 .arrow-button {
   position: absolute;
   right: 11.5%;
-  margin-top: 13px;
+  margin-top: -31px;
 }
 .arrow-forward {
   position: absolute;
@@ -352,7 +358,7 @@ input {
 
   }
 }
-@media only screen and (max-width: 1920px) {
+@media only screen and (min-width: 1224px) {
   .body{
    
   }
@@ -369,7 +375,7 @@ width: 100%;
   top:-61px;
 }
 
-@media only screen and (min-width: 320px){ //iphone
+@media only screen and (min-width: 320px) and (max-width: 480px){ //iphone
   .navbar{
     width: 100%;
     }
@@ -381,9 +387,6 @@ width: 100%;
 .landing-page-cover{
   max-width: 100%;
 }
-@media only screen and (min-width: 768px){ //planshets
+@media only screen and (min-width: 768px) and (max-width: 1000px){ //planshets
 
-}
-@media only screen and (min-width: 1000px) { //landscape
-   
 }
