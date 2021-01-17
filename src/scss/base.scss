@@ -369,7 +369,7 @@ width: 100%;
   top:-61px;
 }
 
-@media only screen and (min-width: 320px){
+@media only screen and (min-width: 320px){ //iphone
   .navbar{
     width: 100%;
     }
@@ -381,9 +381,9 @@ width: 100%;
 .landing-page-cover{
   max-width: 100%;
 }
-@media only screen and (min-width: 480px){
+@media only screen and (min-width: 768px){ //planshets
 
 }
-@media only screen and (min-width: 992px) {
+@media only screen and (min-width: 1000px) { //landscape
    
 }
