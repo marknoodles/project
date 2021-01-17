@@ -16,18 +16,18 @@ span {
 }
 .navbar {
   &__logo {
-    margin-left: 100%;
+    margin-left: 117%;
     // margin-top: 10px;
   }
   &__text-block {
     // margin-top: 18px;
     display: flex;
-    width: 33%;
+    width: 31%;
     justify-content: inherit;
-    margin-left: 25%;
+    margin-left: 28%;
   }
   &__button-block {
-    margin-right: 120px;
+    margin-right: 124px;
     // margin-top: 13px;
   }
   &-text {
@@ -44,7 +44,7 @@ span {
   position: relative;
   font-size: 12px;
   font-weight: 700;
-  margin-right: 25px;
+  margin-right: 15px;
   border-image: linear-gradient(to bottom right, #BC9CFF 0%, #8BA4F9 100%);
   border: 2px solid transparent;
   border-radius: 22px;
@@ -88,8 +88,17 @@ span {
 }
 .landing-page-cover {
   height: 100%;
-  width: 100% ;
-  
+  width: 100%;
+  margin-top: -5%;
+
+}
+.cover{
+overflow: hidden;
+}
+.h-card{
+  color: $darkshade;
+  font-weight: bold;
+  font-size: 24px;
 }
 .search-card {
   width: 380px;
@@ -99,7 +108,7 @@ span {
   border: 1px solid rgba(0, 0, 0, 0.12);
   position: absolute;
   margin-top: 70px;
-  margin-left: 100px;
+  margin-left: 140px;
   background-color: white;
 }
 .search-card:hover {
@@ -248,55 +257,55 @@ input {
 }
 .image-text-bottom {
   position: absolute;
-  bottom: -22px;
-  left: 73%;
+  bottom: 6.1%;
+  left: 72.6%;
+  text-align: end;
 }
 .block {
   display: flex;
-  height: 268px;
-  padding-left: 140px;
-  padding-right: 140px;
-  padding-top: 104px;
+    height: 358px;
+    padding-left: 139px;
+    padding-right: 140px;
+    padding-top: 101px;
 }
 .block {
   &__first {
     display: flex;
-    width: 30%;
+    width: 26%;
     flex-direction: column;
     justify-content: space-between;
-    height: 49%;
-    padding-top: 15px;
+    height: 50%;
   }
   &__logo-img {
-    width: 37%;
+    width: 35%;
   }
   &__second {
     display: flex;
-    width: 20%;
+    width: 17%;
     flex-direction: column;
     justify-content: space-between;
-    height: 70%;
+    height: 67%;
   }
   &__third {
+    display: flex;
+    width: 17%;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 68%;
+  }
+  &__fourth {
+    display: flex;
+    width: 17.5%;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 53%;
+  }
+  &__fifth {
     display: flex;
     width: 21%;
     flex-direction: column;
     justify-content: space-between;
-    height: 70%;
-  }
-  &__fourth {
-    display: flex;
-    width: 20%;
-    flex-direction: column;
-    justify-content: space-between;
-    height: 60%;
-  }
-  &__fifth {
-    display: flex;
-    width: 28%;
-    flex-direction: column;
-    justify-content: space-between;
-    height: 60%;
+    height: 64%;
   }
   &__form-email {
   }
@@ -343,30 +352,34 @@ input {
 
   }
 }
-@media only screen and (min-width: 1382px) {
+@media only screen and (max-width: 1920px) {
   .body{
    
   }
 .navbar{
 width: 100%;
 }
-
+.navbar{
+  &__logo{
+}
+}
+}
 .landing-page-cover{
   width: 100%;
   top:-61px;
 }
 
-}
-@media only screen and (min-width: 768px){
+@media only screen and (min-width: 320px){
   .navbar{
     width: 100%;
     }
-    .navbar__logo{
-      margin: 0;
+    .navbar{
+      &__logo{
     }
-  .landing-page-cover{
-    max-width: 100%;
-  }
+}
+}
+.landing-page-cover{
+  max-width: 100%;
 }
 @media only screen and (min-width: 480px){
 
