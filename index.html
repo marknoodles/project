@@ -82,32 +82,33 @@
           <div class="dropdown">
           <label for="name" class="form__label">ГОСТИ</label>
           <div class="dropdown">
+            <span class="countguests" id="countGuests"></span>
             <button onclick="myFunction()" class="btn btn-light dropdown-toggle" type="button"  id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              0 гостей
             </button>
+            
             <div id="dropDown-menu" class="dropdown-menu" aria-labelledby="dropdownMenu2">
               <div class="dropdown-menu__first">
               <div class="dropdown-item" type="">ВЗРОСЛЫЕ </div>
               <div class="dropdown-menu__first__btns">
-              <input onclick="countMinus()" class="btn-counter-minus" type="button" name="decrease" value="-" />
-              <input id="clicks" value="0" class="dropdown-menu__number" disabled></span>
-              <input onclick="countPlus()" class="btn-counter-plus" type="button" name="increase" value="+"/>
+                <button onclick="countMinus('adults')" class="btn-counter-minus" type="button" name="decrease" > - </button>
+                <span id = "adultsCounter"></span>
+                <button onclick="countPlus('adults')" class="btn-counter-plus" type="button" name="increase" > + </button>
               </div>
               </div>
               <div class="dropdown-menu__second">
               <div class="dropdown-item" type="">ДЕТИ</div>
               <div class="dropdown-menu__first__btns">
-                <input onclick="countMinus()" class="btn-counter-minus" type="button" name="decrease" value="-" />
-                <input id="clicks" class="dropdown-menu__number" value="0" disabled>
-                <input onclick="countPlus()" class="btn-counter-plus" type="button" name="increase" value="+"/>
+                <button onclick="countMinus('kids')" class="btn-counter-minus" type="button" name="decrease"> - </button>
+                <span id = "kidsCounter"></span>
+                <button onclick="countPlus('kids')" class="btn-counter-plus" type="button" name="increase"> + </button>
                 </div>
             </div>
             <div class="dropdown-menu__third">
               <div class="dropdown-item" type="">МЛАДЕНЦЫ</div>
               <div class="dropdown-menu__first__btns">
-                <input class="btn-counter-minus" type="button" name="decrease" value="-" />
-                <input class="dropdown-menu__number" value="0" disabled></span>
-                <input class="btn-counter-plus" type="button" name="increase" value="+"/>
+                <button onclick="countMinus()" class="btn-counter-minus" type="button" name="decrease" > - </button>
+                <span id = "babiesCounter"></span>
+                <button onclick="countPlus('babies')" class="btn-counter-plus" type="button" name="increase" > + </button>
                 </div>
             </div>
           </div>
