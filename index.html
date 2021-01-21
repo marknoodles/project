@@ -51,32 +51,24 @@
           <div class="arriving-departure">
             <div class="form__arriving">
               <label for="name" class="form__label">ПРИБЫТИЕ</label>
-              <input onclick="calendarFunction()"
-                type="text"
-                class="input-calendar"
-                data-position="right top"
-                id="input-calendar"
-                placeholder="ДД.ММ.ГГГГ"
-                required=""
-              />
-            </div>
-<!-- <div id="myCalendar" class="calendar-menu">
-<div class="123">
-  <h3>tittlejdi</h3>
+<button class="btn-arriving" id="countGuests" onclick="calendarFunction()">ДД.ММ.ГГГГ</button>
+<img class="arrow-expand" src="assets/expand_more.png">
+<div id="myCalendar" class="dropdown-menu" class="calendar-wrapper" aria-labelledby="dropdownMenu2">
+  <button id="btnPrev" type="button">Prev</button>
+  <button id="btnNext" type="button">Next</button>
+<div id="divCal"></div>
 </div>
-</div> -->
-
-
+            </div>
 
             <div class="form__departure">
               <label for="name" class="form__label">ВЫЕЗД</label>
-              <input
-                type="date"
-                class="form__input"
-                id="name"
-                placeholder="ДД.ММ.ГГГГ"
-                required=""
-              />
+              <button class="btn-departure" id="countGuests" onclick="calendarFunction()">ДД.ММ.ГГГГ</button>
+              <img class="arrow-expand" src="assets/expand_more.png">
+<div id="myCalendar" class="dropdown-menu" class="calendar-wrapper" aria-labelledby="dropdownMenu2">
+  <button id="btnPrev" type="button">Prev</button>
+  <button id="btnNext" type="button">Next</button>
+<div id="divCal"></div>
+</div>
             </div>
           </div>
           <div class="dropdown">
@@ -85,7 +77,7 @@
             <span class="countguests" id="countGuests"></span>
             <button onclick="myFunction()" class="btn btn-light dropdown-toggle" type="button"  id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
             </button>
-            
+            <img class="arrow-expand" src="assets/expand_more.png">
             <div id="dropDown-menu" class="dropdown-menu" aria-labelledby="dropdownMenu2">
               <div class="dropdown-menu__first">
               <div class="dropdown-item" type="">ВЗРОСЛЫЕ </div>

@@ -1,6 +1,16 @@
+//page
 $darkshade: #1f2041;
 $purple: #bc9cff;
 $green: #6fcf97;
+//calendar
+$main-bg:rgb(40,40,59);
+$calendar-border:rgb(220,220,255);
+$calendar-bg:#fff;
+$calendar-standout:rgb(40,40,59);
+$calendar-color:#444;
+$calendar-fade-color:#c0c0c0;
+$body-color:#444;
+
 body {
   font-family: "Montserrat", sans-serif; 
 }
@@ -120,11 +130,114 @@ overflow: hidden;
   padding-right: 30px;
   padding-bottom: 40px;
 }
+.btn-arriving{
+  height: 44px;
+  width: 150px;
+  border: solid 1px grey;
+  border: opacity 0.5;
+  border-radius: 4px;
+  outline: none;
+  background: white;
+  font-size: 14px;
+  margin-right: -19%;
+ padding-right: 23%;
+}
+.btn-departure{
+  height: 44px;
+  width: 150px;
+  border: solid 1px grey;
+  border: opacity 0.5;
+  border-radius: 4px;
+  outline: none;
+  background: white;
+  font-size: 14px;
+  margin-right: -22%;
+ padding-right: 23%;
+}
+.calendar-wrapper {
+  width:320px;
+  height: 369px;
+  margin:3em auto;
+  padding:2em;
+  border:1px solid $calendar-border;
+  border-radius:5px;
+  background: $calendar-bg;
+}
+table {
+  clear:both;
+  width:100%;
+  border:1px solid $calendar-border;
+  border-radius:3px;
+  border-collapse:collapse;
+  color:$calendar-color;
+}
+td {
+  height:48px;
+  text-align:center;
+  vertical-align:middle;
+  border-right:1px solid $calendar-border;
+  border-top:1px solid $calendar-border;
+  width:100% / 7;
+}
+td.not-current {
+  color:$calendar-fade-color;
+}
+td.normal {}
+td.today {
+  font-weight:700;
+  color:$calendar-standout;
+  font-size:1.5em;
+}
+thead td {
+  border:none;
+  color:$calendar-standout;
+  text-transform:uppercase;
+  font-size:1.5em;
+}
+#btnPrev {
+  float:left;
+  margin-bottom:20px;
+  &:before {
+    content:'\f104';
+    padding-right:4px;
+  }
+}
+#btnNext {
+  float:right;
+  margin-bottom:20px;
+  &:after {
+    content:'\f105';
+    padding-left:4px;
+  }
+}
+#btnPrev, #btnNext {
+  background:transparent;
+  border:none;
+  outline:none;
+  font-size:1em;
+  color:$calendar-fade-color;
+  cursor:pointer;
+  text-transform:uppercase;
+  transition:all 0.3s ease;
+  &:hover {
+    color:$calendar-standout;
+    font-weight:bold;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
 .arriving-departure {
   display: flex;
   justify-content: space-around;
-}
-.form {
 }
 .form {
   &__arriving {
@@ -154,6 +267,7 @@ overflow: hidden;
   &__btn:focus{
     outline: none;
   }
+  &__btn
   &__btn-block {
     padding-top: 10px;
   }
@@ -210,6 +324,7 @@ overflow: hidden;
   width: 320px;
   background: none;
   border: 1px solid grey;
+  margin-right: -10%;
 }
 
 .dropdown-menu{
